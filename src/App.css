@@ -4,6 +4,40 @@
 
 }
 
-h1 {
-  font-family: 'Graphik';
+body {
+  background-color: #f1f8fc ;
 }
+
+* {
+  font-family: "Graphik", sans-serif;
+}
+
+header {
+  background-color: #f1f8fc ;
+  box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,.0793474)
+}
+
+img {
+  width: 250px;
+  height: 100px;
+}
+
+input {
+  max-width: 135px;
+  max-height: 50px;
+}
+
+.searchButton {
+  max-width: 135px;
+  max-height: 50px;
+  background-color: #00497c ;
+  color: #f1f8fc;
+}
+
+.form-control {
+  border: 2px solid #384050;
+ }
+
+ form {
+  padding-left: 2em;
+ }
