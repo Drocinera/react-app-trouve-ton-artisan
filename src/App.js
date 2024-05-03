@@ -8,6 +8,10 @@ import Bâtiment from "./Components/Bâtiment.jsx";
 import Alimentation from "./Components/Alimentation.jsx";
 import Fabrication from "./Components/Fabrication.jsx";
 import Services from "./Components/Services.jsx";
+import Accesibilite from "./Components/Accessibilite.jsx";
+import MentionLegal from "./Components/MentionLégal.jsx";
+import DonneesPersonnelles from "./Components/DonneesPersonnelles.jsx";
+import Cookies from "./Components/Cookies.jsx";
 import './App.css';
 
 
@@ -22,6 +26,10 @@ function App() {
           <Route path="/alimentation" element={<Alimentation />} />
           <Route path="/fabrication" element={<Fabrication />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/accessibilite" element={<Accesibilite />} />
+          <Route path="/donneePersonnelles" element={<DonneesPersonnelles />} />
+          <Route path="/mentionLegal" element={<MentionLegal />} />
+          <Route path="/cookies" element={<Cookies />} />
           <Route path='*' element={<NotFound />}/>
 
           
