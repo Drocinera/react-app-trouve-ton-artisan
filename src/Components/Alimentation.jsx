@@ -1,9 +1,37 @@
-import React from "react";
+import React,{ useState, useEffect } from "react";
+import data from "../datas.json"
 
+    
 const Alimentation = () => {
+    const [AlimentationData, setAlimentationData] = useState([]);
+
+    useEffect(() => {
+      const filteredData = data.filter(item => item.category === "Alimentation");
+      setAlimentationData(filteredData);
+    }, []);
+  
     return (
-        <div>En attente d'information</div>
-    );
+        <section>
+            <div className="containeurAlimentation">
+                <h2 className="text-center">Artisans spécialisés dans l'Alimentation</h2>
+                <div className="row text-center justify-content-center">
+                {AlimentationData.map(item => (
+                <div className="cardStyle row py-2 ms-2" key={item.id} style={{width: '35rem'}}>
+                <div class="card col border border-dark">
+                <div className="card-body text-center">
+                    <h5 className="card-title">{item.name}</h5>
+                    <h6 className="card-subtitle mb-2 text-body-secondary">Note : {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
+                    <p className="card-text">{item.specialty}</p>
+                    <p className="card-text">{item.location}</p>
+                </div>
+                </div>
+                </div>
+                ))}
+            </div>
+        </div>
+    </section>
+
+  );
 };
 
 export default Alimentation;
