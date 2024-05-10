@@ -149,3 +149,22 @@ list-style-type: none;
   content: "";
   background: #cd2c2e ;
  }
+
+ /*Page Alimentation */
+
+.containeurAlimentation{
+  position: relative;
+  
+}
+
+.containeurAlimentation::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 2.8rem;
+  left: -2rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e ;
+ }
