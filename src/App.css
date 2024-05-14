@@ -206,3 +206,16 @@ list-style-type: none;
   content: "";
   background: #cd2c2e ;
  }
+
+ /* Page NotFound*/
+
+ .backButton {
+  background-color: #0074c7;
+  color: #f1f8fc;
+  border-radius: 15px;
+  border-color: black;
+ }
+
+ .linkNotFound {
+  text-decoration: none;
+ }
