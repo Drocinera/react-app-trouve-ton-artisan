@@ -12,6 +12,7 @@ import Accesibilite from "./Components/Accessibilite.jsx";
 import MentionLegal from "./Components/MentionLégal.jsx";
 import DonneesPersonnelles from "./Components/DonneesPersonnelles.jsx";
 import Cookies from "./Components/Cookies.jsx";
+import FicheArtisan from "./Components/FicheArtisan.jsx";
 import './App.css';
 
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/mentionLegal" element={<MentionLegal />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path='*' element={<NotFound />}/>
+          <Route path="/ficheArtisan" element={<FicheArtisan />} />
+          
 
           
         </Routes>
