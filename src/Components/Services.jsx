@@ -17,7 +17,7 @@ const Services = () => {
                 <div className="row text-center justify-content-center">
                 {ServicesData.map(item => (
                 <div className="cardStyle row py-2 ms-2" key={item.id} style={{width: '35rem'}}>
-                <div class="card col border border-dark">
+                <div class="cardColor col border border-dark">
                 <div className="card-body text-center">
                     <h5 className="card-title">{item.name}</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Note : {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
