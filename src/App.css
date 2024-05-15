@@ -8,6 +8,7 @@
 
 body {
   background-color: #f1f8fc ;
+  width: auto;
 }
 
 * {
@@ -93,7 +94,7 @@ input {
  .trouveMonArtisan::before {
   position: absolute;
   list-style-position: inside;
-  top: 2.8rem;
+  top: 1.3rem;
   left: -2rem;
   display: block;
   width: 1rem;
@@ -104,10 +105,12 @@ input {
 
 .listArtisan {
 list-style-type: none;
+margin-left: 25rem;
 }
 
 .artisanDuMois {
   position: relative;
+  margin-left: 30rem;
 
 }
 
@@ -123,12 +126,12 @@ list-style-type: none;
   background: #cd2c2e ;
  }
 
- .container {
-  width: 25em;
- }
-
-.card {
+.cardColor {
   background-color: #0074c7;
+ }
+ .alignCard {
+  display: flex;
+  justify-content: space-around;
  }
 
 /*Page bâtiment */
