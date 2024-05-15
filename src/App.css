@@ -52,6 +52,34 @@ input {
   padding-left: 2em;
  }
 
+ .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #384050;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+  list-style-type: none;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-results li:last-child {
+  border-bottom: none;
+}
+
+.searchList {
+  text-decoration: none;
+  color: #f1f8fc;
+}
 
  /*Footer*/ 
 
@@ -222,3 +250,4 @@ margin-left: 25rem;
  .linkNotFound {
   text-decoration: none;
  }
+

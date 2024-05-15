@@ -3,12 +3,15 @@ import data from "../datas.json";
 
     
 const Home = () => {
+  
   const [topData, setTopData] = useState([]);
 
   useEffect(() => {
     const filteredData = data.filter(item => item.top);
     setTopData(filteredData);
   }, []);
+
+  
 
   return (
   <main>
