@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import data from "../datas.json"
 
     
@@ -15,7 +16,9 @@ const Fabrication = () => {
             <div className="containeurFabrication">
                 <h2 className="text-center">Artisans spécialisés dans la Fabrication</h2>
                 <div className="row text-center justify-content-center">
+                <div className="alignCard">
                 {FabricationData.map(item => (
+                    <Link to={`/fiche-artisan/${item.id}`}>
                 <div className="cardStyle row py-2 ms-2" key={item.id} style={{width: '35rem'}}>
                 <div class="cardColor col border border-dark">
                 <div className="card-body text-center">
@@ -26,7 +29,9 @@ const Fabrication = () => {
                 </div>
                 </div>
                 </div>
+                </Link>
                 ))}
+                </div>
             </div>
         </div>
     </section>

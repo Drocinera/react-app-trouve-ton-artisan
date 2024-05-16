@@ -32,7 +32,7 @@ function App() {
           <Route path="/mentionLegal" element={<MentionLegal />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path='*' element={<NotFound />}/>
-          <Route path="/ficheArtisan" element={<FicheArtisan />} />
+          <Route path="/fiche-artisan/:id" Component={FicheArtisan} />
           
 
           

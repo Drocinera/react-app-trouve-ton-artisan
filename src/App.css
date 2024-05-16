@@ -20,6 +20,11 @@ h2, h3, h4 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+  color: #f1f8fc;
+}
+
 /* Header */
 
 header {
@@ -86,8 +91,10 @@ input {
 
  footer {
   display: flex;
+  flex-wrap: wrap;
   background-color: #0074c7;
   color: #f1f8fc;
+  height: max-content;
  }
 
  .navFooter  {
@@ -159,6 +166,7 @@ margin-left: 25rem;
  }
  .alignCard {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
  }
 

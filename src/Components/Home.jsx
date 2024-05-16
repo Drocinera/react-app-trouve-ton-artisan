@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import data from "../datas.json";
 
     
@@ -15,7 +16,7 @@ const Home = () => {
 
   return (
   <main>
-    <div>
+    <div className="flex-wrap">
       <div className=" text-left pt-4">
       <h2 className="trouveMonArtisan">Comment trouver mon artisan ?</h2>
       <ul className="py-4">
@@ -45,6 +46,7 @@ const Home = () => {
         {topData.map(item => (
           <div>
             <div className="cardStyle  py-1 " key={item.id}>
+              <Link to={`/fiche-artisan/${item.id}`}>
               <div class="cardColor  border border-dark" style={{width: '18rem'}}>
                  <div className="card-body text-center">
                   <h5 className="card-title">{item.name}</h5>
@@ -53,6 +55,7 @@ const Home = () => {
                   <p className="card-text">{item.location}</p>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
         ))}
