@@ -49,7 +49,7 @@ const Home = () => {
               <Link to={`/fiche-artisan/${item.id}`}>
               <div class="cardColor  border border-dark" style={{width: '18rem'}}>
                  <div className="card-body text-center">
-                  <h5 className="card-title">{item.name}</h5>
+                  <h5 className="card-title text-uppercase">{item.name}</h5>
                   <h6 className="card-subtitle mb-2 text-body-secondary">Note : {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
                   <p className="card-text">{item.specialty}</p>
                   <p className="card-text">{item.location}</p>
