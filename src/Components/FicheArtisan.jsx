@@ -11,50 +11,69 @@ const FicheArtisan = () => {
   }
 
   return (
+      <div>
         <div className="cardStyle row py-3 ">
-          <div class="card col border border-dark" style={{width: '18rem'}}>
+          <div className="card col border border-dark" style={{width: '18rem'}}>
             <div className="cardColor card-body text-center">
               <h5 className="card-title text-uppercase">{artisan.name}</h5>
               <h6 className="card-subtitle mb-2 text-body-secondary">Note :{artisan.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
               <p className="card-text">{artisan.specialty}</p>
               <p className="card-text">{artisan.location}</p>
               <p className="card-text">{artisan.about}</p>
-
-              <h2 className="ficheArtisanTitle text-dark py-2 ">Une demande ? Remplissez le formulaire pour contacter l'artisan !</h2>
-
-              <form className="formulaire"/>
-              <div className="mb-3">
-                <label for="inputName" className="form-label">Votre nom et prénom</label>
-                <input type="name" className="form-control" id="inputName" placeholder="Nom et Prénom"/>
-              </div>
-              <div className="mb-3">
-                <label for="exampleInputEmail1" className="form-label">Adressse Mail</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@exemple.com"/>
-              </div>
-              <div className="mb-3">
-                <label for="inputTel" className="form-label">Votre numéro de téléphone</label>
-                <input type="tel" className="form-control" id="inputTel" placeholder="00 00 00 00 00"/>
-              </div>
-              <div className="mb-3">
-                <label for="inputsujet" className="form-label">Sujet du message</label>
-                <input type="sujet" className="form-control" id="inputsujet" placeholder="L'objet de votre message"/>
-              </div>
-              <div className="mb-3">
-                <label for="inputMessage" className="form-label">Message</label>
-                <input type="message" className="form-control" id="inputMessage" placeholder="Votre message..."/>
-              </div>
-              <div className="form-check mb-3 text-light">
-                <input type="checkbox" className="form-check-input m-2" id="Check" aria-describedby="infoform"/>
-                <label className="form-check-label" for="Check">En cochant la case vous certifié que toute les données du formulaire sont correcte</label>
-              </div>
-              <button type="submit" className="btn btn-success">Envoyer</button>
-              <p>{artisan.website}</p>
-          </div>
+              <p className="card-text">{artisan.website}</p>
+            </div>
         </div>
       </div>
+        <h2 className="ficheArtisanTitle text-dark py-2 text-center ">Une demande ? Remplissez le formulaire pour contacter l'artisan !</h2>
+          <div>
+            <form>
+              <div class="row g-3">
+                <div class="col mb-3">
+                  <label for="inputFirstName" class="col-sm-2 col-form-label">Nom :</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Nom" aria-label="First name"/>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <label for="inputLastName" class="col-sm-2 col-form-label">Prénom :</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Prénom" aria-label="Last name"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email :</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="exemple@exemple.com"/>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputSujet" class="col-sm-2 col-form-label">Sujet du message:</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputSujet" placeholder="Objet de votre message"/>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="formControlTextarea1" class="form-label">Message :</label>
+                <textarea class="form-control" id="formControlTextarea1" rows="3" placeholder="Entrez votre message ici"></textarea>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1"/>
+                    <label class="form-check-label" for="gridCheck1">
+                      En cochant cette case vous affirmez que toutes les informations sont exactes
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+          </div>
+        </div>
     );
 };
 
 export default FicheArtisan;
 
-//Modifier le formulaire et la couleur des mots en blanc
+//Modifier Remettre en ordre le formulaire et le rendre plus attrayant et ordonner

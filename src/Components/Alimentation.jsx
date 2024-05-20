@@ -20,7 +20,7 @@ const Alimentation = () => {
                 {AlimentationData.map(item => (
                     <Link to={`/fiche-artisan/${item.id}`}>
                 <div className="cardStyle row py-2 ms-2" key={item.id} style={{width: '35rem'}}>
-                <div class="cardColor col border border-dark">
+                <div className="cardColor col border border-dark">
                 <div className="card-body text-center">
                     <h5 className="card-title text-uppercase">{item.name}</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Note : {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
