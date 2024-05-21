@@ -268,3 +268,17 @@ margin-left: 25rem;
   margin-right: -2rem;
 
  }
+
+ .form-check-input {
+  background-color: #0074c7;
+ }
+
+ .colorTest {
+  background-color: #0074c7;
+ }
+
+ .colorTest2 {
+  background-color: #f1f8fc;
+  margin: 2em;
+  margin-bottom: 0;
+ }

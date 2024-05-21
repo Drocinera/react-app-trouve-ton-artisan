@@ -31,7 +31,7 @@ const Header = () => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img
-              src="./Logo.png"
+              src="../Logo.png"
               alt="Bootstrap"
               title="CV Logo"
               width="40"
