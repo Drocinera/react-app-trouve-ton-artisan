@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import data from "../datas.json";
 
     
 const Home = () => {
+  
   const [topData, setTopData] = useState([]);
 
   useEffect(() => {
@@ -10,11 +12,13 @@ const Home = () => {
     setTopData(filteredData);
   }, []);
 
+  
+
   return (
   <main>
-    <div>
-      <div className="trouveMonArtisan text-left pt-4">
-      <h2>Comment trouver mon artisan ?</h2>
+    <div className="flex-wrap">
+      <div className=" text-left pt-4">
+      <h2 className="trouveMonArtisan">Comment trouver mon artisan ?</h2>
       <ul className="py-4">
         <li className="listArtisan">
           <h3>1- Choisir la catégorie d’artisanat dans le menu</h3>
@@ -35,26 +39,33 @@ const Home = () => {
       </ul>  
       </div>
       <div className="container py-4">
-        <h2 className="artisanDuMois text-center">Les artisans du mois !</h2>
+        <div>
+        <h2 className="artisanDuMois text-left">Les artisans du mois !</h2>
+        </div>
+        <div className="alignCard">
         {topData.map(item => (
-        <div className="cardStyle row py-1 " key={item.id}>
-        <div class="card col border border-dark" style={{width: '18rem'}}>
-          <div className="card-body text-center">
-            <h5 className="card-title">{item.name}</h5>
-            <h6 className="card-subtitle mb-2 text-body-secondary">Note : {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
-            <p className="card-text">{item.specialty}</p>
-            <p className="card-text">{item.location}</p>
+          <div>
+            <div className="cardStyle  py-1 " key={item.id}>
+              <Link to={`/fiche-artisan/${item.id}`}>
+              <div class="cardColor  border border-dark" style={{width: '18rem'}}>
+                 <div className="card-body text-center">
+                  <h5 className="card-title text-uppercase">{item.name}</h5>
+                  <h6 className="card-subtitle mb-2 text-body-secondary">Note : {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
+                  <p className="card-text">{item.specialty}</p>
+                  <p className="card-text">{item.location}</p>
+                </div>
+              </div>
+              </Link>
+            </div>
           </div>
-        </div>
-        </div>
         ))}
-        </div>
       </div>
-
-  </main>
+    </div>
+  </div>
+</main>
   );
 };
 
-  
+  //Attention ! LEs cardes n'ont pas de breakpoint, a ajouter pour responsive mobile et mettre en colonne
 
-export default Home;
+export default Home; //Vérifiez orthographe

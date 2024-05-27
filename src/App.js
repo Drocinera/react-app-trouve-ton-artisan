@@ -23,16 +23,16 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/bâtiment" element={<Bâtiment />} />
-          <Route path="/alimentation" element={<Alimentation />} />
-          <Route path="/fabrication" element={<Fabrication />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/Bâtiment" element={<Bâtiment />} />
+          <Route path="/Alimentation" element={<Alimentation />} />
+          <Route path="/Fabrication" element={<Fabrication />} />
+          <Route path="/Services" element={<Services />} />
           <Route path="/accessibilite" element={<Accesibilite />} />
           <Route path="/donneePersonnelles" element={<DonneesPersonnelles />} />
           <Route path="/mentionLegal" element={<MentionLegal />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path='*' element={<NotFound />}/>
-          <Route path="/ficheArtisan" element={<FicheArtisan />} />
+          <Route path="/fiche-artisan/:id" Component={FicheArtisan} />
           
 
           

@@ -8,7 +8,7 @@ const Footer = () => {
   <div className="container text-center">
   <div className="column">
     <div className="footerImage col-4 row justify-content-start">
-      <img src=".\Logo.png" alt="Logo du site" />
+      <img src="../Logo.png" alt="Logo du site" />
     </div>
     <div className="footerContact col align-self-center border-bottom">
     <h4 className="text-uppercase text-light">Lyon</h4>
@@ -33,3 +33,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+//Changer background footer pour que logo sois plus visible (ou changez logo en blanc)

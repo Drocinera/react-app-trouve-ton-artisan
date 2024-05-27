@@ -8,6 +8,7 @@
 
 body {
   background-color: #f1f8fc ;
+  width: auto;
 }
 
 * {
@@ -17,6 +18,11 @@ body {
 h2, h3, h4 {
   color: #00497c;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #f1f8fc;
 }
 
 /* Header */
@@ -51,14 +57,44 @@ input {
   padding-left: 2em;
  }
 
+ .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #384050;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+  list-style-type: none;
+}
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-results li:last-child {
+  border-bottom: none;
+}
+
+.searchList {
+  text-decoration: none;
+  color: #f1f8fc;
+}
 
  /*Footer*/ 
 
 
  footer {
   display: flex;
+  flex-wrap: wrap;
   background-color: #0074c7;
   color: #f1f8fc;
+  height: max-content;
  }
 
  .navFooter  {
@@ -93,7 +129,7 @@ input {
  .trouveMonArtisan::before {
   position: absolute;
   list-style-position: inside;
-  top: 2.8rem;
+  top: 1.3rem;
   left: -2rem;
   display: block;
   width: 1rem;
@@ -104,10 +140,12 @@ input {
 
 .listArtisan {
 list-style-type: none;
+margin-left: 25rem;
 }
 
 .artisanDuMois {
   position: relative;
+  margin-left: 30rem;
 
 }
 
@@ -123,12 +161,14 @@ list-style-type: none;
   background: #cd2c2e ;
  }
 
- .container {
-  width: 25em;
- }
-
-.card {
+.cardColor {
   background-color: #0074c7;
+  color: #f1f8fc;
+ }
+ .alignCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
  }
 
 /*Page bâtiment */
@@ -218,4 +258,27 @@ list-style-type: none;
 
  .linkNotFound {
   text-decoration: none;
+ }
+
+ /* Fiche Artisan */
+
+ .ficheArtisanTitle {
+  background-color: #f1f8fc;
+  margin-left: -2rem;
+  margin-right: -2rem;
+
+ }
+
+ .form-check-input {
+  background-color: #0074c7;
+ }
+
+ .colorTest {
+  background-color: #0074c7;
+ }
+
+ .colorTest2 {
+  background-color: #f1f8fc;
+  margin: 2em;
+  margin-bottom: 0;
  }
