@@ -12,7 +12,7 @@ const Fabrication = () => {
     }, []);
   
     return (
-        <section>
+        <main>
             <div className="containeurFabrication">
                 <h2 className="text-center">Artisans spécialisés dans la Fabrication</h2>
                 <div className="row text-center justify-content-center">
@@ -34,7 +34,7 @@ const Fabrication = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
   );
 };

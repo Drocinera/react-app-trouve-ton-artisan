@@ -68,4 +68,4 @@ const Home = () => {
 
   //Attention ! LEs cardes n'ont pas de breakpoint, a ajouter pour responsive mobile et mettre en colonne
 
-export default Home;
+export default Home; //Vérifiez orthographe

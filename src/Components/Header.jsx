@@ -115,3 +115,5 @@ const Header = () => {
 };
 
 export default Header;
+//Recherche probleme : Soit retirer le bouton et obliger utilisateur a entrer 3 lettre pour avoir correspondance.
+//Soit laisser mais lorsque personne appuye sur "entrer", il y a une liste de recherche la plus probable 

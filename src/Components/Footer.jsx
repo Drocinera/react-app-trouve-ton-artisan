@@ -33,3 +33,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+//Changer background footer pour que logo sois plus visible (ou changez logo en blanc)
