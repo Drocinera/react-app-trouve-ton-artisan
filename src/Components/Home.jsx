@@ -17,27 +17,32 @@ const Home = () => {
   return (
   <main>
     <div className="flex-wrap">
-      <div className=" text-left pt-4">
-      <h2 className="trouveMonArtisan">Comment trouver mon artisan ?</h2>
-      <ul className="py-4">
-        <li className="listArtisan">
-          <h3>1- Choisir la catégorie d’artisanat dans le menu</h3>
-          <p>Dans l'en tête, choissisez la catégorie entre "Bâtiment", "Alimentation", "Fabrication" ou "Service" </p>
-        </li>
-        <li className="listArtisan">
-          <h3>2- Choisir un artisan</h3>
-          <p>Cliquez sur une des fiche artisan présente pour accéder à sa présentation complète</p>
-        </li>
-        <li className="listArtisan">
-          <h3>3- Le contacter via le formulaire de contact</h3>
-          <p>Lorsque vous êtes sûr d'avoir trouver votre artisan, remplissez le formulaire situer dans la fiche complète de l'artisan pour le contacter</p>
-        </li>
-        <li className="listArtisan">
-          <h3>4- Une réponse sera apportée sous 48h</h3>
-          <p>Tout les artisans présent sur ce site s'engage à vous répondre sous 24h</p>
-        </li>
-      </ul>  
+      <div className="mainSectionContaineur text-left pt-4">
+        <div className="mainSectionContaineurText">
+          <h2 className="trouveMonArtisan">Comment trouver mon artisan ?</h2>
+          <ul className="py-4">
+            <li className="listArtisan">
+              <h3>1- Choisir la catégorie d’artisanat dans le menu</h3>
+              <p>Dans l'en tête, choissisez la catégorie entre "Bâtiment", "Alimentation", "Fabrication" ou "Service" </p>
+           </li>
+          <li className="listArtisan">
+            <h3>2- Choisir un artisan</h3>
+            <p>Cliquez sur une des fiche artisan présente pour accéder à sa présentation complète</p>
+          </li>
+          <li className="listArtisan">
+            <h3>3- Le contacter via le formulaire de contact</h3>
+            <p>Lorsque vous êtes sûr d'avoir trouver votre artisan, remplissez le formulaire situer dans la fiche complète de l'artisan pour le contacter</p>
+          </li>
+          <li className="listArtisan">
+            <h3>4- Une réponse sera apportée sous 48h</h3>
+            <p>Tout les artisans présent sur ce site s'engage à vous répondre sous 24h</p>
+          </li>
+        </ul>
       </div>
+      <div className="d-flex flex-colum homeImgContaineur">
+        <img src="..\image-home.png" alt="plan de travail par Megan Rexazin Conde" className="homeImg" />
+      </div>
+    </div>
       <div className="container py-4">
         <div>
         <h2 className="artisanDuMois text-left">Les artisans du mois !</h2>
@@ -70,6 +75,7 @@ const Home = () => {
   );
 };
 
-  //Attention ! LEs cardes n'ont pas de breakpoint, a ajouter pour responsive mobile et mettre en colonne
+  //Mettre breakpooints pour blabla afin qu'ils soit centrer en mode mobile
+  //Chercher des images
 
 export default Home; //Vérifiez orthographe
