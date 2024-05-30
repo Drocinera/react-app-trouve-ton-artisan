@@ -76,6 +76,5 @@ const Home = () => {
 };
 
   //Mettre breakpooints pour blabla afin qu'ils soit centrer en mode mobile
-  //Chercher des images
 
 export default Home; //Vérifiez orthographe

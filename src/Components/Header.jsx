@@ -42,17 +42,16 @@ const Header = () => {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="nav justify-content-end"
-            id="navbarSupportedContent"
-          >
+            className="nav justify-content-end "
+            id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 nav-underline text-uppercase">
               <li className="nav-item">
                 <Link className="nav-link" to="/" aria-current="page">
@@ -80,6 +79,8 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="formContaineur">
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
