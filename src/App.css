@@ -29,6 +29,17 @@ a {
 
 /* Header */
 
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .searchButton {
+    display: none;
+  }
+}
+
 header {
   background-color: #f1f8fc ;
   box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,.0793474)

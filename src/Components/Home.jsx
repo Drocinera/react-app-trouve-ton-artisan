@@ -52,7 +52,7 @@ const Home = () => {
           <div>
             <div className="cardStyle  py-1 " key={item.id}>
               <Link to={`/fiche-artisan/${item.id}`}>
-              <div class="cardColor  border border-dark" style={{width: '18rem'}}>
+              <div className="cardColor  border border-dark" style={{width: '18rem'}}>
                  <div className="card-body text-center">
                   <h5 className="card-title text-uppercase">{item.name}</h5>
                   <h6 className="card-subtitle mb-2 text-body-secondary"> {item.note}/5 <i className="fa-solid fa-star text-warning"></i></h6>
@@ -75,6 +75,8 @@ const Home = () => {
   );
 };
 
-  //Mettre breakpooints pour blabla afin qu'ils soit centrer en mode mobile
+  /*Mettre breakpooints pour blabla afin qu'ils soit centrer en mode mobile
+  en ligne dans le header 
+  en collumn pour le reste */
 
 export default Home; //Vérifiez orthographe
