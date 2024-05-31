@@ -43,7 +43,7 @@ const Home = () => {
         <img src="..\image-home.png" alt="plan de travail par Megan Rexazin Conde" className="homeImg" />
       </div>
     </div>
-      <div className="container py-4">
+      <div className="container py-4 text-center">
         <div>
         <h2 className="artisanDuMois text-left">Les artisans du mois !</h2>
         </div>
@@ -74,9 +74,5 @@ const Home = () => {
 </main>
   );
 };
-
-  /*Mettre breakpooints pour blabla afin qu'ils soit centrer en mode mobile
-  en ligne dans le header 
-  en collumn pour le reste */
 
 export default Home; //Vérifiez orthographe

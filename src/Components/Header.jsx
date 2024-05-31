@@ -102,12 +102,6 @@ const Header = () => {
                   ))}
                 </ul>
               )}
-              <button
-                className="searchButton btn btn-outline-success"
-                type="submit"
-              >
-                Rechercher
-              </button>
             </form>
           </div>
         </div>

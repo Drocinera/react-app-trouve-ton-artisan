@@ -34,10 +34,6 @@ a {
     display: flex;
     flex-direction: row;
   }
-
-  .searchButton {
-    display: none;
-  }
 }
 
 header {
@@ -55,15 +51,9 @@ input {
   max-height: 50px;
 }
 
-.searchButton {
-  max-width: 135px;
-  max-height: 50px;
-  background-color: #00497c ;
-  color: #f1f8fc;
-}
-
 .form-control {
-  border: 2px solid #384050;
+  border-right: .1rem solid #0074c7;
+  border-bottom:.1rem solid #0074c7 ;
  }
 
  form {
@@ -178,15 +168,14 @@ list-style-type: none;
 
 .artisanDuMois {
   position: relative;
-  margin-left: 30rem;
 
 }
 
 .artisanDuMois::before {
   position: absolute;
   list-style-position: inside;
-  top: 1.3rem;
-  left: -2rem;
+  top: 1.0rem;
+  left: 5rem;
   display: block;
   width: 1rem;
   height: 0.3rem;
@@ -203,6 +192,19 @@ list-style-type: none;
   flex-wrap: wrap;
   justify-content: space-around;
  }
+
+ @media screen and (max-width: 768px) {
+  .mainSectionContaineur {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 /*Page bâtiment */
 
