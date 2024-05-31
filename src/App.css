@@ -1,3 +1,5 @@
+/*Pas oublier de mettre tout ca en saas*/
+
 /*Base*/
 
 @font-face {
@@ -27,6 +29,13 @@ a {
 
 /* Header */
 
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 header {
   background-color: #f1f8fc ;
   box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,.0793474)
@@ -42,15 +51,9 @@ input {
   max-height: 50px;
 }
 
-.searchButton {
-  max-width: 135px;
-  max-height: 50px;
-  background-color: #00497c ;
-  color: #f1f8fc;
-}
-
 .form-control {
-  border: 2px solid #384050;
+  border-right: .1rem solid #0074c7;
+  border-bottom:.1rem solid #0074c7 ;
  }
 
  form {
@@ -110,8 +113,8 @@ input {
  }
 
  .footerImage {
-  width: 250px;
-  height: 150px;
+  width: 225px;
+  height: 100px;
  }
 
  .PageLegal {
@@ -121,9 +124,30 @@ input {
 
  /*Home */
 
+ .mainSectionContaineur {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainSectionContaineurText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+}
+
+.homeImg {
+  margin-left: 2em;
+  width: 35em;
+  height: 25em;
+  padding-left: 2em;
+}
+
  .trouveMonArtisan {
   position: relative;
-  margin-left: 30rem;
  }
 
  .trouveMonArtisan::before {
@@ -140,20 +164,18 @@ input {
 
 .listArtisan {
 list-style-type: none;
-margin-left: 25rem;
 }
 
 .artisanDuMois {
   position: relative;
-  margin-left: 30rem;
 
 }
 
 .artisanDuMois::before {
   position: absolute;
   list-style-position: inside;
-  top: 1.3rem;
-  left: -2rem;
+  top: 1.0rem;
+  left: 5rem;
   display: block;
   width: 1rem;
   height: 0.3rem;
@@ -170,6 +192,19 @@ margin-left: 25rem;
   flex-wrap: wrap;
   justify-content: space-around;
  }
+
+ @media screen and (max-width: 768px) {
+  .mainSectionContaineur {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 /*Page bâtiment */
 

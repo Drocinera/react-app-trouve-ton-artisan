@@ -2,7 +2,9 @@ import React from "react";
 
 const Accesibilite = () => {
     return (
-        <div>En attente d'information</div>
+        <main>
+            <div>En attente d'informations</div>
+        </main>
     );
 };
 
