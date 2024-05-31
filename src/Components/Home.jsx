@@ -27,15 +27,15 @@ const Home = () => {
            </li>
           <li className="listArtisan">
             <h3>2- Choisir un artisan</h3>
-            <p>Cliquez sur une des fiche artisan présente pour accéder à sa présentation complète</p>
+            <p>Cliquez sur une des fiches artisan présentent pour accéder à sa présentation complète</p>
           </li>
           <li className="listArtisan">
             <h3>3- Le contacter via le formulaire de contact</h3>
-            <p>Lorsque vous êtes sûr d'avoir trouver votre artisan, remplissez le formulaire situer dans la fiche complète de l'artisan pour le contacter</p>
+            <p>Lorsque vous êtes sûr d'avoir trouvé votre artisan, remplissez le formulaire situé dans la fiche complète de l'artisan pour le contacter</p>
           </li>
           <li className="listArtisan">
             <h3>4- Une réponse sera apportée sous 48h</h3>
-            <p>Tout les artisans présent sur ce site s'engage à vous répondre sous 24h</p>
+            <p>Tout les artisans présent sur ce site s'engagent à vous répondre sous 24h</p>
           </li>
         </ul>
       </div>
@@ -75,4 +75,4 @@ const Home = () => {
   );
 };
 
-export default Home; //Vérifiez orthographe
+export default Home; 
