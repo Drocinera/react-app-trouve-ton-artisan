@@ -6,6 +6,8 @@ const FicheArtisan = () => {
   const { id } = useParams();
   const artisan = data.find(item => item.id === id);
 
+  //Initiliastion des variables du mail 
+
   const [formValues, setFormValues] = useState({
     nom: '',
     prénom: '',
