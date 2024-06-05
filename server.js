@@ -39,7 +39,7 @@ app.post('/send-email', (req, res) => {
   });
 });
 
-// Servir les fichiers statiques de l'application React
+// Utilisation0 des fichiers statiques de l'application React
 app.use(express.static(path.join(__dirname, '/build')));
 
 // Toutes les autres requêtes sont redirigées vers l'application React

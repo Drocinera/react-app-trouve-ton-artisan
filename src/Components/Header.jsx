@@ -31,7 +31,7 @@ const Header = () => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img
-              src="../Logo.png"
+              src="../Image/Logo.png"
               alt="Bootstrap"
               title="CV Logo"
               width="40"
@@ -53,61 +53,61 @@ const Header = () => {
           <div
             className="nav justify-content-end "
             id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 nav-underline text-uppercase">
-              <li className="nav-item">
-                <Link className="nav-link" to="/" aria-current="page">
-                  Acceuil
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Bâtiment">
-                  Bâtiment
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Alimentation">
-                  Alimentation
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Fabrication">
-                  Fabrication
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Services">
-                  Services
-                </Link>
-              </li>
-            </ul>
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 nav-underline text-uppercase">
+                <li className="nav-item">
+                  <Link className="nav-link" to="/" aria-current="page">
+                    Acceuil
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Bâtiment">
+                    Bâtiment
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Alimentation">
+                    Alimentation
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Fabrication">
+                    Fabrication
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Services">
+                    Services
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="formContaineur">
+              <form className="d-flex" role="search">
+                <input
+                  className="form-control me-2"
+                  type="text"
+                  placeholder="Rechercher..."
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                  aria-label="Search"
+                />
+                {searchTerm && (
+                  <ul className="search-results">
+                    {searchResults.map(item => (
+                      <li key={item.id}>
+                        <Link to={`/${item.category}`} className="searchList" onClick={clearSearch}>
+                          {item.name} - {item.specialty} - {item.location}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </form>
+            </div>
           </div>
-          <div className="formContaineur">
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="text"
-                placeholder="Rechercher..."
-                value={searchTerm}
-                onChange={handleSearchChange}
-                aria-label="Search"
-              />
-              {searchTerm && (
-                <ul className="search-results">
-                  {searchResults.map(item => (
-                    <li key={item.id}>
-                      <Link to={`/${item.category}`} className="searchList" onClick={clearSearch}>
-                        {item.name} - {item.specialty} - {item.location}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-  );
-};
+        </nav>
+      </header>
+    );
+  };
 
 export default Header;

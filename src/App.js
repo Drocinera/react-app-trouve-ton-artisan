@@ -13,7 +13,18 @@ import MentionLegal from "./Components/MentionLégal.jsx";
 import DonneesPersonnelles from "./Components/DonneesPersonnelles.jsx";
 import Cookies from "./Components/Cookies.jsx";
 import FicheArtisan from "./Components/FicheArtisan.jsx";
-import './App.css';
+import '../src/Css/App.css';
+import '../src/Css/App.css.map';
+import '../src/Css/FicheArtisan.css';
+import '../src/Css/FicheArtisan.css.map';
+import '../src/Css/Footer.css';
+import '../src/Css/Footer.css.map';
+import '../src/Css/Header.css';
+import '../src/Css/Header.css.map';
+import '../src/Css/Home.css';
+import '../src/Css/Home.css.map';
+import '../src/Css/navPages.css';
+import '../src/Css/navPages.css.map';
 
 
 

@@ -1,0 +1,22 @@
+@use 'color' ;
+
+.ficheArtisanTitle {
+    background-color: color.$ColorBlanc;
+    margin-left: -2rem;
+    margin-right: -2rem;
+  
+   }
+  
+   .form-check-input {
+    background-color: color.$ColorBleu;
+   }
+  
+   .colorTest {
+    background-color: color.$ColorBleu;
+   }
+  
+   .colorTest2 {
+    background-color: color.$ColorBlanc;
+    margin: 2em;
+    margin-bottom: 0;
+   }
