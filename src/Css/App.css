@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Graphik";
+  src: url("../Font/Graphik-Regular-Trial.otf") format("opentype");
+}
+* {
+  font-family: "Graphik", sans-serif;
+}
+
+body {
+  background-color: #f1f8fc;
+  width: auto;
+}
+body h2, body h3, body h4 {
+  color: #00497c;
+  font-weight: bold;
+}
+body a {
+  text-decoration: none;
+  color: #f1f8fc;
+}
+
+/*# sourceMappingURL=App.css.map */

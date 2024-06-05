@@ -1,0 +1,61 @@
+@use 'color';
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+header {
+  background-color: color.$ColorBlanc ;
+  box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,.0793474);
+
+img {
+  width: 250px;
+  height: 100px;
+  }
+
+input {
+  max-width: 135px;
+  max-height: 50px;
+  }
+
+.form-control {
+  border-right: .1rem solid color.$ColorBleuClair;
+  border-bottom:.1rem solid color.$ColorBleuClair ;
+  }
+
+ form {
+  padding-left: 2em;
+   }
+
+ .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: color.$ColorGris;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+  list-style-type: none;
+  }
+
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  }
+
+.search-results li:last-child {
+  border-bottom: none;
+  }
+
+.searchList {
+  text-decoration: none;
+  color: color.$ColorBlanc;
+  }
+}

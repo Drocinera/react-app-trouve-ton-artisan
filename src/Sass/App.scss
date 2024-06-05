@@ -1,0 +1,26 @@
+@use 'color';
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../Font/Graphik-Regular-Trial.otf') format('opentype');
+
+}
+
+* {
+  font-family: "Graphik", sans-serif;
+}
+
+body {
+  background-color: color.$ColorBlanc ;
+  width: auto;
+
+h2, h3, h4 {
+  color: color.$ColorBleu;
+  font-weight: bold;
+  }
+
+a {
+  text-decoration: none;
+  color: color.$ColorBlanc;
+  }
+}

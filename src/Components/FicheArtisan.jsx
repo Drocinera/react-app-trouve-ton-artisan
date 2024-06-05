@@ -6,6 +6,8 @@ const FicheArtisan = () => {
   const { id } = useParams();
   const artisan = data.find(item => item.id === id);
 
+  //Initiliastion des variables du mail 
+
   const [formValues, setFormValues] = useState({
     nom: '',
     prénom: '',
@@ -41,8 +43,6 @@ const FicheArtisan = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = { ...formValues, artisanEmail: artisan.email };
-
-    console.log('Form data:', formData);
 
     try {
       const response = await fetch('http://localhost:3000/send-email', {
@@ -100,22 +100,22 @@ const FicheArtisan = () => {
             <label htmlFor="inputFirstName" className="col-sm-2 col-form-label">Nom :</label>
             <div className="col-sm-10">
               <input type="text" className="form-control" id="inputFirstName" name="nom" placeholder="Nom" required value={formValues.nom} onChange={handleChange} />
-              <div class="valid-feedback">
+              <div className="valid-feedback">
                 C'est ok !
               </div>
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 Veuillez entrer un nom valide 
               </div>
             </div>
           </div>
-          <div className="col mb-3">
+          <div classNameName="col mb-3">
             <label htmlFor="inputLastName" className="col-sm-2 col-form-label">Prénom :</label>
             <div className="col-sm-10">
               <input type="text" className="form-control" id="inputLastName" name="prénom" placeholder="Prénom" required value={formValues.prénom} onChange={handleChange} />
-              <div class="valid-feedback">
+              <div className="valid-feedback">
                 C'est ok !
               </div>
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 Veuillez entrer un prénom valide 
               </div>
             </div>
@@ -125,10 +125,10 @@ const FicheArtisan = () => {
           <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email :</label>
           <div className="col-sm-10">
             <input type="email" className="form-control" id="inputEmail3" name="email" placeholder="exemple@exemple.com" required value={formValues.email} onChange={handleChange} />
-            <div class="valid-feedback">
+            <div className="valid-feedback">
                 C'est ok !
               </div>
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 Veuillez entrer une adresse mail valide 
               </div>
           </div>
@@ -137,10 +137,10 @@ const FicheArtisan = () => {
           <label htmlFor="inputSujet" className="col-sm-2 col-form-label">Sujet du message :</label>
           <div className="col-sm-10">
             <input type="text" className="form-control" id="inputSujet" name="sujet" placeholder="Objet de votre message" required value={formValues.sujet} onChange={handleChange} />
-            <div class="valid-feedback">
+            <div className="valid-feedback">
                 C'est ok !
               </div>
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 Veuillez indiquezle sujet de votre message
               </div>
           </div>
@@ -148,21 +148,21 @@ const FicheArtisan = () => {
         <div className="mb-3">
           <label htmlFor="formControlTextarea1" className="form-label">Message :</label>
           <textarea className="form-control" id="formControlTextarea1" name="message" rows="3" placeholder="Entrez votre message ici" required value={formValues.message} onChange={handleChange}></textarea>
-          <div class="valid-feedback">
+          <div className="valid-feedback">
                 C'est ok !
               </div>
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 Un message est demandé 
               </div>
         </div>
         <div className="row mb-3">
           <div className="col-sm-10 offset-sm-2">
             <div className="form-check">
-              <input className="form-check-input" type="checkbox" id="gridCheck1" required />
-              <div class="valid-feedback">
+              <input className="form-check-input" type="checkbox" id="gridCheck1"  name="checkbox" required />
+              <div className="valid-feedback">
                 C'est ok !
               </div>
-              <div class="invalid-feedback">
+              <div className="invalid-feedback">
                 La case doit être cochée 
               </div>
               <label className="form-check-label" htmlFor="gridCheck1">

@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+header {
+  background-color: #f1f8fc;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.0793474);
+}
+header img {
+  width: 250px;
+  height: 100px;
+}
+header input {
+  max-width: 135px;
+  max-height: 50px;
+}
+header .form-control {
+  border-right: 0.1rem solid #0074c7;
+  border-bottom: 0.1rem solid #0074c7;
+}
+header form {
+  padding-left: 2em;
+}
+header .search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #384050;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+  list-style-type: none;
+}
+header .search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+header .search-results li:last-child {
+  border-bottom: none;
+}
+header .searchList {
+  text-decoration: none;
+  color: #f1f8fc;
+}
+
+/*# sourceMappingURL=Header.css.map */

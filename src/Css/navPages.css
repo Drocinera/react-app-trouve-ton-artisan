@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*Page bâtiment */
+.containeurBatiment {
+  position: relative;
+}
+
+.containeurBatiment::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 2.8rem;
+  left: -2rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e;
+}
+
+/*Page Alimentation */
+.containeurAlimentation {
+  position: relative;
+}
+
+.containeurAlimentation::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 2.8rem;
+  left: -2rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e;
+}
+
+/*Page Fabrication */
+.containeurFabrication {
+  position: relative;
+}
+
+.containeurFabrication::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 2.8rem;
+  left: -2rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e;
+}
+
+/*Page Fabrication */
+.containeurServices {
+  position: relative;
+}
+
+.containeurServices::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 2.8rem;
+  left: -2rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e;
+}
+
+/* Page NotFound*/
+.backButton {
+  background-color: #00497c;
+  color: #f1f8fc;
+  border-radius: 15px;
+  border-color: black;
+}
+
+.linkNotFound {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=navPages.css.map */

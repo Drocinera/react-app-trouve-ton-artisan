@@ -1,0 +1,81 @@
+.mainSectionContaineur {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainSectionContaineurText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+}
+
+.homeImg {
+  margin-left: 2em;
+  width: 35em;
+  height: 25em;
+  padding-left: 2em;
+}
+
+.trouveMonArtisan {
+  position: relative;
+}
+
+.trouveMonArtisan::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 1.3rem;
+  left: -2rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e;
+}
+
+.listArtisan {
+  list-style-type: none;
+}
+
+.artisanDuMois {
+  position: relative;
+}
+
+.artisanDuMois::before {
+  position: absolute;
+  list-style-position: inside;
+  top: 1rem;
+  left: 5rem;
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  content: "";
+  background: #cd2c2e;
+}
+
+.cardColor {
+  background-color: #00497c;
+  color: #f1f8fc;
+}
+
+.alignCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .mainSectionContaineur {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */
