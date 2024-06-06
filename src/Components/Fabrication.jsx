@@ -18,8 +18,8 @@ const Fabrication = () => {
                 <div className="row text-center justify-content-center">
                     <div className="alignCard">
                     {FabricationData.map(item => (
+                        <div className="cardStyle row py-2 ms-2" key={item.id} style={{width: '35rem'}}>
                     <Link to={`/fiche-artisan/${item.id}`}>
-                    <div className="cardStyle row py-2 ms-2" key={item.id} style={{width: '35rem'}}>
                         <div className="cardColor col border border-dark">
                             <div className="card-body text-center">
                                 <h5 className="card-title text-uppercase">{item.name}</h5>
@@ -30,12 +30,12 @@ const Fabrication = () => {
                                     <i className="fa-solid fa-briefcase"></i>{item.specialty}
                                 </p>
                                 <p className="card-text">
-                                    <i class="fa-solid fa-location-dot"></i>{item.location}
+                                    <i className="fa-solid fa-location-dot"></i>{item.location}
                                 </p>
                             </div>
                         </div>
+                        </Link>
                     </div>
-                </Link>
                 ))}
                 </div>
             </div>

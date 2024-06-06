@@ -108,7 +108,7 @@ const FicheArtisan = () => {
               </div>
             </div>
           </div>
-          <div classNameName="col mb-3">
+          <div className="col mb-3">
             <label htmlFor="inputLastName" className="col-sm-2 col-form-label">Prénom :</label>
             <div className="col-sm-10">
               <input type="text" className="form-control" id="inputLastName" name="prénom" placeholder="Prénom" required value={formValues.prénom} onChange={handleChange} />
