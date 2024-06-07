@@ -11,7 +11,7 @@ In the project directory, you can run:
 
 ### `yarn`
 
-If the app don't run, use 'yarn' in the console for fix the issue
+If the app don't run, use 'yarn' in the terminal for fix the issue
 
 ### `npm start`
 
