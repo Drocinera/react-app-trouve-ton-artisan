@@ -9,6 +9,10 @@ This project use :
 
 In the project directory, you can run:
 
+### 'yarn'
+
+If the app don't run, use 'yarn' in the console for fix the issue
+
 ### `npm start`
 
 Runs the app in the development mode.\
