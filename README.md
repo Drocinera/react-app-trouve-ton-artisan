@@ -9,7 +9,7 @@ This project use :
 
 In the project directory, you can run:
 
-### 'yarn'
+### `yarn`
 
 If the app don't run, use 'yarn' in the console for fix the issue
 
